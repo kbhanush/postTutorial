@@ -6,17 +6,16 @@ var jwt = require('jwt-simple');
 var app = express();
 app.use(require('body-parser').json());
 //var lodash = require('lodash')
-var User = require('./user');
+var User = require('./models/user');
 
 var secrectKey = 'supersecretkey';
-
 
 
 
 /* Route for creating new user accounts & saving in mongodb
 
  */
-app.post('/user', function(req,res) {
+app.post('/register', function(req,res) {
 
 /* create hash using crypto */
     var crypto = require('crypto')

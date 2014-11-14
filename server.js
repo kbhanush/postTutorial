@@ -81,11 +81,11 @@ app.post('/api/posts/sms', function(req, res) {
         });
         post.save(function (err, post) {
             if (err) { return next(err) }
-            res.json(201, post)
+            res.status(201).json(post)
         })
     });
 
-app.get('/', function(req,res){res.sendfile('index.html')});
+app.get('/', function(req,res){res.sendfile('post.html')});
 
     app.listen(3000, function() {
         console.log('Node Server running on port 3000', 3000)});
