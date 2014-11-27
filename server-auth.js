@@ -6,7 +6,7 @@ var jwt = require('jwt-simple');
 var app = express();
 app.use(require('body-parser').json());
 //var lodash = require('lodash')
-var User = require('./models/user');
+var User = require('./backEnd/models/user');
 
 var secrectKey = 'supersecretkey';
 

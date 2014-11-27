@@ -6,4 +6,4 @@ angular.module('app')
         $routeProvider.when('/', {controller: 'postCtrl', templateUrl: 'posts.html'})
                       .when('/register', {controller: 'registerCtrl', templateUrl: 'register.html'})
                       .when('/login', {controller: 'loginCtrl', templateUrl: 'login.html'})
-    })
+    });
