@@ -1,5 +1,16 @@
 var app = angular.module('app', ['ngRoute']);
-app.controller('PostsCtrl', function ($scope, $http) {
+
+angular.module('app')
+    .config(function($routeProvider){
+        $routeProvider.when('/', {controller: 'postsCtrl', templateUrl: 'posts.html'})
+            .when('/register', {controller: 'registerCtrl', templateUrl: 'register.html'})
+            .when('/login', {controller: 'loginCtrl', templateUrl: 'login.html'})
+    });
+
+
+
+angular.module('app')
+    .controller('postsCtrl', function ($scope, $http) {
 
     $scope.addPost = function(){
         if ($scope.postBody) {

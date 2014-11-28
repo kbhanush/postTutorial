@@ -11,7 +11,9 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use('/', require('./backEnd/static'));
 //var static= __dirname + '\public'
 app.use(express.static(__dirname + '/frontEnd'));
-//app.get('/', function(req,res){res.sendfile('post.html')});
+app.use(express.static(__dirname + '/frontEnd/images'));
+app.use(express.static(__dirname + '/frontEnd/views'));
+//app.get('/', function(req,res){res.sendfile('index.html')});
 
 //    app.listen(3000, function() {
 //        console.log('Node Server running on port 3000', 3000)});
