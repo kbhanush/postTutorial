@@ -18,6 +18,29 @@ app.use(express.static(__dirname + '/frontEnd/views'));
 //    app.listen(3000, function() {
 //        console.log('Node Server running on port 3000', 3000)});
 
+//------------------------------------------Server-Auth requires()
+
+var jwt = require('jwt-simple');
+var User = require('./backEnd/models/user');
+var crypto = require('crypto');
+
+//----------------------------------------------server-auth.js imported here------------------------------------------------
+
+
+ //   ------------------------------------------------End server-auth.js -------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //require('./static')(app);
 var server = app.listen(process.env.PORT || 3000, function () {

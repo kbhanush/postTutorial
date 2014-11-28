@@ -66,5 +66,5 @@ app.get('/user', function(req,res) {
     res.json(user)
 });
 
-app.listen(3001);
-console.log('server-auth running on port 3001');
+app.listen(3002);
+console.log('server-auth running on port 3002');
