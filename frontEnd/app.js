@@ -8,7 +8,13 @@ angular.module('app')
     });
 
 
+angular.module('app')
+    .controller('applicationCtrl', function($scope) {
+        $scope.$on('login', function(_, user) {
+            $scope.currentUser = user
+        })
 
+    });
 angular.module('app')
     .controller('postsCtrl', function ($scope, $http) {
 
@@ -26,3 +32,37 @@ angular.module('app')
 
     $http.get('http://localhost:3000/api/posts').success(function(posts) {$scope.posts = posts})
 });
+
+angular.module('app')
+    .controller('loginCtrl', function($scope, userSvc, $location) {
+        $scope.login = function (username, password) {
+            userSvc.login(username, password)
+
+                .then(function (user) {
+                    $scope.$emit('login', user)
+                    $location.path('/')
+                })
+
+
+        }
+
+    })
+
+
+angular.module('app')
+    .service('userSvc', function($http) {
+
+        this.login = function(username, password) {
+
+            return $http.post('/login', {username: username, password: password}).then(function(response){
+
+                return response.data
+            })
+
+
+
+        }
+
+
+
+    })

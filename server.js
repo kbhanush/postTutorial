@@ -58,7 +58,7 @@ app.post('/login', function(req,res, next) {
         var hash = crypto.createHmac('sha1', key).update(req.body.password).digest('hex');
         if (hash === user.password) {
             var token = jwt.encode({username: req.body.username}, secrectKey);
-            res.json({"token":token})
+            res.json({"username":user.username, "token":token})
         }
         else {res.json({"serverMessage": "Invalid username or password!"})}
 
@@ -67,15 +67,6 @@ app.post('/login', function(req,res, next) {
 });
 
  //   ------------------------------------------------End server-auth.js -------------------------------------------------
-
-
-
-
-
-
-
-
-
 
 
 
