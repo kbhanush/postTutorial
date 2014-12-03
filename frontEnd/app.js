@@ -9,10 +9,11 @@ angular.module('app')
 
 
 angular.module('app')
-    .controller('applicationCtrl', function($scope) {
+    .controller('applicationCtrl', function($scope, $location) {
         $scope.$on('login', function(_, user) {
             $scope.currentUser = user
         })
+       if (!$scope.currentUser) {$location.path('/login')}
 
     });
 angular.module('app')
