@@ -9,16 +9,17 @@ angular.module('app')
 
 
 angular.module('app')
-    .controller('applicationCtrl', function($scope, $location) {
+    .controller('applicationCtrl', function($scope,$rootScope, $location) {
         $scope.$on('login', function(_, user) {
             $scope.currentUser = user
+            $rootScope.currentUser = user
         })
        if (!$scope.currentUser) {$location.path('/login')}
 
     });
 angular.module('app')
-    .controller('postsCtrl', function ($scope, $http) {
-
+    .controller('postsCtrl', function ($scope,$rootScope, $location, $http) {
+    if (!$rootScope.currentUser) {$location.path('/login')}
     $scope.addPost = function(){
         if ($scope.postBody) {
             $http.post('http://localhost:3000/api/posts', {username: 'kbhanush', body: $scope.postBody})
@@ -48,6 +49,7 @@ angular.module('app')
         }
 
     })
+
 
 
 angular.module('app')

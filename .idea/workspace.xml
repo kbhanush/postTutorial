@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="99cd2847-b450-4f93-a99f-d6bdb259565a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontEnd/app.js" afterPath="$PROJECT_DIR$/frontEnd/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontEnd/index.html" afterPath="$PROJECT_DIR$/frontEnd/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="fromScratch.iws" />
@@ -60,8 +59,8 @@
       <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontEnd/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2982456" vertical-offset="0" max-vertical-offset="1258">
-              <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.23859648" vertical-offset="153" max-vertical-offset="1292">
+              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -166,9 +165,9 @@
         <option value="$PROJECT_DIR$/frontEnd/views/posts.html" />
         <option value="$PROJECT_DIR$/server-auth.js" />
         <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/frontEnd/app.js" />
         <option value="$PROJECT_DIR$/frontEnd/index.html" />
         <option value="$PROJECT_DIR$/frontEnd/views/login.html" />
+        <option value="$PROJECT_DIR$/frontEnd/app.js" />
       </list>
     </option>
   </component>
@@ -433,7 +432,11 @@
       <created>1417555570485</created>
       <updated>1417555570485</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="checks for currentUser and redirects to /login if absent&#10;Next - use $rootscope to confirm login from any page">
+      <created>1417622425579</created>
+      <updated>1417622425579</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -502,7 +505,8 @@
     <MESSAGE value="&lt;ng-view&gt; works&#10;filter query works&#10;kaya.gif works" />
     <MESSAGE value="server-auth working as-is&#10;Next - port server-auth code into server.js" />
     <MESSAGE value="ok, server auth code in server.js works&#10;created new controller for index.html - applicationCtrl&#10;Created userSvc to get login data from API&#10;Called userSvc from loginCrtl, floated up with $emit &amp; $on&#10;Next -&#10;No post without logging in&#10;websockets" />
-    <option name="LAST_COMMIT_MESSAGE" value="ok, server auth code in server.js works&#10;created new controller for index.html - applicationCtrl&#10;Created userSvc to get login data from API&#10;Called userSvc from loginCrtl, floated up with $emit &amp; $on&#10;Next -&#10;No post without logging in&#10;websockets" />
+    <MESSAGE value="checks for currentUser and redirects to /login if absent&#10;Next - use $rootscope to confirm login from any page" />
+    <option name="LAST_COMMIT_MESSAGE" value="checks for currentUser and redirects to /login if absent&#10;Next - use $rootscope to confirm login from any page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -908,8 +912,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2982456" vertical-offset="0" max-vertical-offset="1258">
-          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.23859648" vertical-offset="153" max-vertical-offset="1292">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
           <folding />
         </state>
       </provider>
