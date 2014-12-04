@@ -51,21 +51,39 @@ angular.module('app')
     })
 
 
+angular.module('app')
+    .controller('registerCtrl', function($scope, userSvc, $location){
+        $scope.register = function(firstname, lastname, cellphone, username, password) {
+
+            userSvc.signup(firstname, lastname, cellphone, username, password)
+                .then(function(res){
+                   console.log('Signup successful!')
+                    $location.path('/')
+
+                })
+        }
+
+    })
+
 
 angular.module('app')
     .service('userSvc', function($http) {
 
-        this.login = function(username, password) {
+        this.login = function (username, password) {
 
-            return $http.post('/login', {username: username, password: password}).then(function(response){
+            return $http.post('/login', {username: username, password: password}).then(function (response) {
+
+                return response.data
+            })
+        };
+
+        this.signup = function (firstname, lastname, cellphone, username, password) {
+
+            return $http.post('/register', {firstname: firstname, lastname: lastname, cellphone: cellphone, username: username, password: password}).then(function (response) {
 
                 return response.data
             })
 
-
-
-        }
-
-
+        };
 
     })

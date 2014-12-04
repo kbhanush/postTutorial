@@ -37,6 +37,9 @@ app.post('/register', function(req,res) {
     /*save username and hashed pw in mongo */
 
     var user = new User();
+    user.firstname = req.body.firstname;
+    user.lastname = req.body.lastname;
+    user.cellphone = req.body.cellphone;
     user.username = req.body.username;
     user.password = hash;
     user.save(function (err) {

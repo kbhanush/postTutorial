@@ -13,6 +13,9 @@
 
 var db = require('../db');
 var user = db.model('user', {
+        firstname: {type: String, required: true},
+        lastname: {type: String, required: true},
+        cellphone: {type: Number, require: false},
         username: {type: String, required: true },
         password: {type: String, required: true}
 
