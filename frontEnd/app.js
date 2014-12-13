@@ -1,5 +1,33 @@
+
 var app = angular.module('app', ['ngRoute']);
 
+//--------------Websocket connection initiator ------------------
+angular.module('app')
+    .run(function ($rootScope,$timeout,  $window) {
+        var host
+        if ($window.location.protocol === "https:") {
+            host = "wss://" + $window.location.host
+        } else {
+            host = "ws://" + $window.location.host
+        }
+        var connection = new WebSocket(host)
+
+        connection.onopen = function () {
+            console.log('WebSocket connected')
+        }
+
+        connection.onclose = function (e) {
+            console.log('WebSocket closed. Reconnecting...')
+            $timeout(connect, 10*1000)
+        }
+
+        connection.onmessage = function (e) {
+            var payload = JSON.parse(e.data)
+            $rootScope.$broadcast('ws:' + payload.topic, payload.data)
+        }
+    })
+
+//------------------------------------------------------------------------
 angular.module('app')
     .config(function($routeProvider){
         $routeProvider.when('/', {controller: 'postsCtrl', templateUrl: 'posts.html'})
@@ -36,6 +64,13 @@ angular.module('app')
 
         }
     };
+
+        $scope.$on('ws:new_post', function (_, post) {
+            $scope.$apply(function () {
+                $scope.posts.unshift(post)
+            })
+        })
+
     $http.get('/api/posts').success(function(posts) {$scope.posts = posts})
 });
 
