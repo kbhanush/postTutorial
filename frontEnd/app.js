@@ -11,18 +11,24 @@ angular.module('app')
 angular.module('app')
     .controller('applicationCtrl', function($scope,$rootScope, $location) {
         $scope.$on('login', function(_, user) {
-            $scope.currentUser = user
+            //alert(location.hostname)
+            //$scope.currentUser = user
             $rootScope.currentUser = user
+            $rootScope.hostname = location.hostname
         })
        if (!$scope.currentUser) {$location.path('/login')}
 
+
     });
+
+//-------------------------------------------------- Post Controller -------------------------------------------------------------
 angular.module('app')
     .controller('postsCtrl', function ($scope,$rootScope, $location, $http) {
-    if (!$rootScope.currentUser) {$location.path('/login')}
+   // if (!$rootScope.currentUser) {$location.path('/login')}
+
     $scope.addPost = function(){
         if ($scope.postBody) {
-            $http.post('http://localhost:3000/api/posts', {username: 'kbhanush', body: $scope.postBody})
+            $http.post('/api/posts', {username: $rootScope.currentUser.username, body: $scope.postBody})
                 .success(function(post){
                     $scope.posts.unshift(post);
                     $scope.postBody = null
@@ -30,10 +36,11 @@ angular.module('app')
 
         }
     };
-
-
-    $http.get('http://localhost:3000/api/posts').success(function(posts) {$scope.posts = posts})
+    $http.get('/api/posts').success(function(posts) {$scope.posts = posts})
 });
+
+//------------------------------------------------End Post Controller ----------------------------------------------------------
+
 
 angular.module('app')
     .controller('loginCtrl', function($scope, userSvc, $location) {
@@ -41,6 +48,7 @@ angular.module('app')
             userSvc.login(username, password)
 
                 .then(function (user) {
+
                     $scope.$emit('login', user)
                     $location.path('/')
                 })
