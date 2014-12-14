@@ -69,8 +69,8 @@
       <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontEnd/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2509225" vertical-offset="0" max-vertical-offset="2346">
-              <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.7072571" vertical-offset="258" max-vertical-offset="2890">
+              <caret line="49" column="50" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -169,14 +169,14 @@
         <option value="$PROJECT_DIR$/frontEnd/index.html" />
         <option value="$PROJECT_DIR$/frontEnd/views/posts.html" />
         <option value="$PROJECT_DIR$/backEnd/api/sms.js" />
-        <option value="$PROJECT_DIR$/frontEnd/app.js" />
         <option value="$PROJECT_DIR$/backEnd/api/posts.js" />
+        <option value="$PROJECT_DIR$/frontEnd/app.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="8" />
-    <option name="width" value="1274" />
+    <option name="width" value="1056" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -248,6 +248,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="frontEnd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fromScratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fromScratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="backEnd" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -275,7 +293,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mean-sample" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nodejs-mongodb-angularjs-web-development" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="FullScreen" value="false" />
@@ -388,12 +406,16 @@
       <created>1418506294455</created>
       <updated>1418506294455</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="websocket works from multiple devices and sms&#10;Some bugs -&#10;mongo clock sticks&#10;ws may timeout and lose connection&#10;localhost needs to connect first to switch protocols&#10;safari echoes">
+      <created>1418514759066</created>
+      <updated>1418514759066</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="8" y="0" width="1274" height="1050" extended-state="0" />
-    <editor active="true" />
+    <frame x="8" y="0" width="1056" height="1050" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -401,7 +423,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819384" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24960506" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20566802" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24975418" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39867842" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -459,7 +481,8 @@
     <MESSAGE value="ok, server auth code in server.js works&#10;created new controller for index.html - applicationCtrl&#10;Created userSvc to get login data from API&#10;Called userSvc from loginCrtl, floated up with $emit &amp; $on&#10;Next -&#10;No post without logging in&#10;websockets" />
     <MESSAGE value="checks for currentUser and redirects to /login if absent&#10;Next - use $rootscope to confirm login from any page" />
     <MESSAGE value="works from multiple browsers, ipad, mac etc&#10;picksup username from $rootscope&#10;some bugs &#10;- create date gets stuck until you restart mongo&#10;-no seconds showing on localhost&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="works from multiple browsers, ipad, mac etc&#10;picksup username from $rootscope&#10;some bugs &#10;- create date gets stuck until you restart mongo&#10;-no seconds showing on localhost&#10;" />
+    <MESSAGE value="websocket works from multiple devices and sms&#10;Some bugs -&#10;mongo clock sticks&#10;ws may timeout and lose connection&#10;localhost needs to connect first to switch protocols&#10;safari echoes" />
+    <option name="LAST_COMMIT_MESSAGE" value="websocket works from multiple devices and sms&#10;Some bugs -&#10;mongo clock sticks&#10;ws may timeout and lose connection&#10;localhost needs to connect first to switch protocols&#10;safari echoes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -862,8 +885,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2509225" vertical-offset="0" max-vertical-offset="2346">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.7072571" vertical-offset="258" max-vertical-offset="2890">
+          <caret line="49" column="50" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
           <folding />
         </state>
       </provider>
