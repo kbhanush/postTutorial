@@ -11,6 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use('/', require('./backEnd/static'));
 //var static= __dirname + '\public'
 app.use(express.static(__dirname + '/frontEnd'));
+app.use(express.static(__dirname + '/frontEnd/css'));
 app.use(express.static(__dirname + '/frontEnd/images'));
 app.use(express.static(__dirname + '/frontEnd/views'));
 //app.get('/', function(req,res){res.sendfile('index.html')});
