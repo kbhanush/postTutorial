@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use('/', require('./backEnd/static'));
 //var static= __dirname + '\public'
 app.use(express.static(__dirname + '/frontEnd'));
-app.use(express.static(__dirname + '/frontEnd/css'));
+app.use(express.static(__dirname + '/frontEnd/css   '));
 app.use(express.static(__dirname + '/frontEnd/images'));
 app.use(express.static(__dirname + '/frontEnd/views'));
 //app.get('/', function(req,res){res.sendfile('index.html')});
@@ -34,6 +34,7 @@ app.post('/register', function(req,res) {
         , key = 'supersecretkey';
 
     var hash = crypto.createHmac('sha1', key).update(req.body.password).digest('hex');
+
 
     /*save username and hashed pw in mongo */
 
@@ -73,7 +74,7 @@ app.post('/login', function(req,res, next) {
  //   ------------------------------------------------End server-auth.js -------------------------------------------------
 
 
-
+//
 
 
 //require('./static')(app);

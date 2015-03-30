@@ -1,0 +1,28 @@
+.menuSearchBox  {
+    width: 300px;
+    border:1px solid #ccc;
+}
+
+.postSubmitBox  {
+    border:1px solid #ccc;
+    width: 455px;
+    padding-top: 0px;
+
+}
+
+.kaya {
+    border:1px solid #ccc;
+    width: 20px;
+    height: 20px;
+}
+
+/*.searchIcon*/
+/*{*/
+    /*background: url(searchicon-image-path) no-repeat;*/
+    /*width: 17px;*/
+    /*height: 17px;*/
+    /*text-indent: -999em;*/
+    /*display: inline-block;*/
+    /*left: 432px;*/
+    /*top: 9px;*/
+/*}*/

@@ -1,0 +1,19 @@
+<div class="container">
+    <form ng-submit="register(firstname, lastname, cellphone, username, password)">
+        <div class="form-group"><br><br>
+
+
+            <input class="form-control" type="text" placeholder="First Name" ng-model="firstname">
+            <br><br>
+            <input class="form-control" type="text" placeholder="Last Name" ng-model="lastname">
+            <br><br>
+            <input class="form-control" type="tel" placeholder="Cell phone" ng-model="cellphone">
+            <br><br>
+            <input class="form-control" type="text" placeholder="Username/Handle" ng-model="username">
+            <br><br>
+            <input class="form-control" type="password" placeholder="Password" ng-model="password">
+        </div>
+        <input class="btn btn-success btn-lg btn-block" type="submit" value="Register">
+        <!--<button ng-click='login()' class='btn btn-success btn-lg btn-block'>Login</button>-->
+    </form>
+</div>
