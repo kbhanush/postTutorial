@@ -10,8 +10,8 @@ module.exports = function(app) {
     app.post('/api/posts/sms', function (req, res) {
             // if (twilio.validateExpressRequest(req, 'e57ce77ccf4d2d49fbe053dc161c1430')) {
 
-            // var restClient = new twilio.RestClient('ACfe1d55aa2594ce1f83317305800d1c98', 'e57ce77ccf4d2d49fbe053dc161c1430')
-            client = twilio('ACfe1d55aa2594ce1f83317305800d1c98', 'e57ce77ccf4d2d49fbe053dc161c1430');
+            
+            client = twilio('ACfe1d55gfhgfhgfhf317305800d1c98', 'e57cjgjfgjfjhfe053dc161c1430');
 
 
             // var resp = new twilio.TwimlResponse();
@@ -19,9 +19,9 @@ module.exports = function(app) {
 
             var fromNumber = req.body.From;
             var smsMessage = req.body.Body.trim();
-            if (req.body.From.trim() === '+19254879949') {
+            if (req.body.From.trim() === '+1xxxxxxx49') {
 
-                client.sendMessage({ to: '19254879949', from: '19253041391', body: 'Raj, you are so smart!' }, function (err, data) {
+                client.sendMessage({ to: '1xxxxx9949', from: '1xxxxx391', body: 'Hey, you are so smart!' }, function (err, data) {
                 })
 
             }
@@ -29,7 +29,7 @@ module.exports = function(app) {
             // resp.message('Hi, Thanks for posting!!');
             //}
 
-            client.sendMessage({ to: '19258950395', from: '19253041391', body: 'Msg recd!' }, function (err, data) {
+            client.sendMessage({ to: '1xxxxxxxxxx', from: '1xxxxxxxxxx', body: 'Msg recd!' }, function (err, data) {
             });
 
 
