@@ -5,7 +5,7 @@
     "body-parser": "^1.9.2",
     "express": "^4.10.1",
     "jwt-simple": "^0.2.0",
-    "lodash": "^2.4.1",
+    "lodash": "^4.17.19",
     "mongoose": "^3.8.18",
     "twilio": "^1.7.0",
     "ws": "^0.5.0"
